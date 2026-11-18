@@ -1,16 +1,46 @@
-# React + Vite
+# 🚀 ASSA.dev - Digital Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive multi-page digital catalog web application built using **React.js**, **Vite**, **Bootstrap 5**, and **React Router DOM**. This project demonstrates clean UI components, modular page architecture, and seamless single-page application (SPA) navigation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Project Overview
 
-## React Compiler
+**ASSA.dev Digital Catalog** serves as a modern showcase platform for hardware/IoT solutions and full-stack web development services. Designed with modularity and developer-friendly practices in mind, this project breaks down layouts into reusable components and dedicated page routes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features & Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚡ **Vite + React framework**: Lightning-fast local development and lightweight builds.
+- 🎨 **Bootstrap 5 & React Icons**: Modern, responsive utility UI framework integrated with custom SVG icons.
+- 🧭 **Multi-Page SPA Navigation**: Handled cleanly via `react-router-dom` with 404 fallback routing (`*`).
+- 🧩 **Modular Component Design**:
+  - `components/Navbar.jsx` — Global navigation bar.
+  - `components/Footer.jsx` — Reusable global footer.
+  - `components/ProductCard.jsx` — Dynamically rendered catalog items via props.
+  - `components/Kontak.jsx` — Interactive user inquiry form & contact details.
+- 📁 **Dedicated Page Routes**:
+  - `HomePage.jsx` — Landing hero overview + embedded inquiry form.
+  - `ProductsPage.jsx` — Array mapping of available digital & hardware products.
+
+---
+
+## 📂 Project Directory Structure
+
+```text
+src/
+├── assets/          # Static assets (images, logos)
+├── components/      # Reusable UI components
+│   ├── Footer.jsx
+│   ├── Kontak.jsx
+│   ├── Navbar.jsx
+│   └── ProductCard.jsx
+├── data/            # Static data stores
+│   └── productsData.js
+├── pages/           # Dedicated route views
+│   ├── HomePage.jsx
+│   └── ProductsPage.jsx
+├── App.jsx          # Root layout & BrowserRouter routes setup
+├── main.jsx         # Vite entry point
+└── index.css        # Global custom styles & smooth scrolling
